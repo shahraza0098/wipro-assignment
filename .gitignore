@@ -1,0 +1,13 @@
+# Eclipse
+.metadata/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+
+# Node (if any)
+node_modules/
