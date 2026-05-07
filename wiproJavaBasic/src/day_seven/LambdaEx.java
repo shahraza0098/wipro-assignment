@@ -19,6 +19,8 @@ public class LambdaEx {
         System.out.println("Subtraction = " + sub.ope(a, b));
         System.out.println("Multiplication = " + mul.ope(a, b));
         System.out.println("Division = " + div.ope(a, b));
+        
+        
 	}
 
 }
