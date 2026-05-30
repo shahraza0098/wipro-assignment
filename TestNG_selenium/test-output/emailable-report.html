@@ -9,14 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">RegressionSuite</th></tr>
-<tr><td><a href="#t0">RegressionTests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">141</td><td></td><td></td></tr>
+<tr><td><a href="#t0">RegressionTests</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,023</td><td>regression, smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">listener_codes.Test_cases</td><td><a href="#m0">test2</a></td><td rowspan="1">1779450057298</td><td rowspan="1">9</td></tr><tr><th colspan="4">RegressionTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">listener_codes.Test_cases</td><td><a href="#m1">test1</a></td><td rowspan="1">1779450057264</td><td rowspan="1">25</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">day26assignment.TutorialsNinjaTests</td><td><a href="#m0">login</a></td><td rowspan="1">1779518468456</td><td rowspan="1">6742</td></tr><tr><th colspan="4">RegressionTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">day26assignment.TutorialsNinjaTests</td><td><a href="#m1">addToCart</a></td><td rowspan="1">1779518478257</td><td rowspan="1">600</td></tr><tr class="passedeven"><td><a href="#m2">checkoutFunction</a></td><td rowspan="1">1779518482136</td><td rowspan="1">1373</td></tr><tr class="passedeven"><td><a href="#m3">logoutFunc</a></td><td rowspan="1">1779518483532</td><td rowspan="1">767</td></tr><tr class="passedeven"><td><a href="#m4">register</a></td><td rowspan="1">1779518475221</td><td rowspan="1">3015</td></tr><tr class="passedeven"><td><a href="#m5">removeItemFromCart</a></td><td rowspan="1">1779518481205</td><td rowspan="1">917</td></tr><tr class="passedeven"><td><a href="#m6">searchProductByName</a></td><td rowspan="3">1779518478871</td><td rowspan="3">757</td></tr><tr class="passedeven"><td><a href="#m7">searchProductByName</a></td></tr><tr class="passedeven"><td><a href="#m8">searchProductByName</a></td></tr></tbody>
 </table>
-<h2>RegressionTests</h2><h3 id="m0">listener_codes.Test_cases#test2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
-	at listener_codes.Test_cases.test2(Test_cases.java:13)
+<h2>RegressionTests</h2><h3 id="m0">day26assignment.TutorialsNinjaTests#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Log in&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b51026d12340785253f3db5d7f35d20, findElement {value=//input[@value=&apos;Log in&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shahr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, goog:processID: 2628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b51026d12340785253f3db5d7f35d20
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at day26assignment.TutorialsNinjaPage.loginUser(TutorialsNinjaPage.java:95)
+	at day26assignment.TutorialsNinjaTests.login(TutorialsNinjaTests.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">listener_codes.Test_cases#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">day26assignment.TutorialsNinjaTests#addToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">day26assignment.TutorialsNinjaTests#checkoutFunction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">day26assignment.TutorialsNinjaTests#logoutFunc</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">day26assignment.TutorialsNinjaTests#register</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>Shahid</td><td>Raza</td><td>shahraza20123@gmail.com</td><td>9091421098</td><td>shah123</td><td>shah123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">day26assignment.TutorialsNinjaTests#removeItemFromCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">day26assignment.TutorialsNinjaTests#searchProductByName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>iphone</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">day26assignment.TutorialsNinjaTests#searchProductByName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>tab</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">day26assignment.TutorialsNinjaTests#searchProductByName</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>imac</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

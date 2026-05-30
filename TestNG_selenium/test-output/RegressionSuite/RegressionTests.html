@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegressionTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 22 17:10:57 IST 2026</td>
+<td>Started on:</td><td>Sat May 23 12:11:03 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (141 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21023 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>regression smoke </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,15 +76,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='listener_codes.Test_cases.test2()'><b>test2</b><br>Test class: listener_codes.Test_cases</td>
-<td><div><pre>java.lang.AssertionError: null
-	at listener_codes.Test_cases.test2(Test_cases.java:13)
+<td title='day26assignment.TutorialsNinjaTests.login()'><b>login</b><br>Test class: day26assignment.TutorialsNinjaTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Log in&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b51026d12340785253f3db5d7f35d20, findElement {value=//input[@value=&apos;Log in&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shahr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, goog:processID: 2628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b51026d12340785253f3db5d7f35d20
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at day26assignment.TutorialsNinjaPage.loginUser(TutorialsNinjaPage.java:95)
+	at day26assignment.TutorialsNinjaTests.login(TutorialsNinjaTests.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace221634215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace221634215'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at listener_codes.Test_cases.test2(Test_cases.java:13)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2081000371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2081000371'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@value=&apos;Log in&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b51026d12340785253f3db5d7f35d20, findElement {value=//input[@value=&apos;Log in&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shahr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, goog:processID: 2628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b51026d12340785253f3db5d7f35d20
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at day26assignment.TutorialsNinjaPage.loginUser(TutorialsNinjaPage.java:95)
+	at day26assignment.TutorialsNinjaTests.login(TutorialsNinjaTests.java:67)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,8 +150,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>listener_codes.Test_cases@15c43bd9</td></tr>
+<td>6</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -124,10 +162,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='listener_codes.Test_cases.test1()'><b>test1</b><br>Test class: listener_codes.Test_cases</td>
+<td title='day26assignment.TutorialsNinjaTests.searchProductByName()'><b>searchProductByName</b><br>Test class: day26assignment.TutorialsNinjaTests<br>Parameters: iphone</td>
 <td></td>
 <td>0</td>
-<td>listener_codes.Test_cases@15c43bd9</td></tr>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.searchProductByName()'><b>searchProductByName</b><br>Test class: day26assignment.TutorialsNinjaTests<br>Parameters: tab</td>
+<td></td>
+<td>0</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.removeItemFromCart()'><b>removeItemFromCart</b><br>Test class: day26assignment.TutorialsNinjaTests</td>
+<td></td>
+<td>0</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.checkoutFunction()'><b>checkoutFunction</b><br>Test class: day26assignment.TutorialsNinjaTests</td>
+<td></td>
+<td>1</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.searchProductByName()'><b>searchProductByName</b><br>Test class: day26assignment.TutorialsNinjaTests<br>Parameters: imac</td>
+<td></td>
+<td>0</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.addToCart()'><b>addToCart</b><br>Test class: day26assignment.TutorialsNinjaTests</td>
+<td></td>
+<td>0</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.logoutFunc()'><b>logoutFunc</b><br>Test class: day26assignment.TutorialsNinjaTests</td>
+<td></td>
+<td>0</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
+<tr>
+<td title='day26assignment.TutorialsNinjaTests.register()'><b>register</b><br>Test class: day26assignment.TutorialsNinjaTests<br>Parameters: Shahid, Raza, shahraza20123@gmail.com, 9091421098, shah123, shah123</td>
+<td></td>
+<td>3</td>
+<td>day26assignment.TutorialsNinjaTests@67d48005</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,12 +5,19 @@
     <listener class-name="listeners.MyListener"/>
   </listeners>
   <test thread-count="5" name="RegressionTests(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="listener_codes.Test_cases">
+      <class name="day26assignment.TutorialsNinjaTests">
         <methods>
-          <include name="test2"/>
+          <include name="setup"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- listener_codes.Test_cases -->
+      </class> <!-- day26assignment.TutorialsNinjaTests -->
     </classes>
   </test> <!-- RegressionTests(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

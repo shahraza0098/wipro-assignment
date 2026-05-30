@@ -7,16 +7,16 @@
         <listener class-name="listeners.MyListener"/>
     </listeners>
   <test thread-count="8" name="RegressionTests">
-  <!-- <groups>
+  <groups>
   <run>
   <include name="regression"></include>
    <include name="smoke"></include>
   </run>
-  </groups>  -->
+  </groups> 
   
     <classes>
    
-       <class name="listener_codes.Test_cases"/>
+       <class name="day26assignment.TutorialsNinjaTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

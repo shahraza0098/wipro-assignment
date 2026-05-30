@@ -1,26 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-22T17:10:57 IST" name="RegressionSuite" finished-at="2026-05-22T17:10:57 IST" duration-ms="141">
+  <suite started-at="2026-05-23T12:11:03 IST" name="RegressionSuite" finished-at="2026-05-23T12:11:24 IST" duration-ms="21023">
     <groups>
+      <group name="regression">
+        <method signature="TutorialsNinjaTests.login()[pri:0, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="login" class="day26assignment.TutorialsNinjaTests"/>
+        <method signature="TutorialsNinjaTests.register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="register" class="day26assignment.TutorialsNinjaTests"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TutorialsNinjaTests.addToCart()[pri:2, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="addToCart" class="day26assignment.TutorialsNinjaTests"/>
+        <method signature="TutorialsNinjaTests.searchProductByName(java.lang.String)[pri:2, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="searchProductByName" class="day26assignment.TutorialsNinjaTests"/>
+        <method signature="TutorialsNinjaTests.removeItemFromCart()[pri:3, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="removeItemFromCart" class="day26assignment.TutorialsNinjaTests"/>
+        <method signature="TutorialsNinjaTests.checkoutFunction()[pri:4, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="checkoutFunction" class="day26assignment.TutorialsNinjaTests"/>
+        <method signature="TutorialsNinjaTests.logoutFunc()[pri:5, instance:day26assignment.TutorialsNinjaTests@67d48005]" name="logoutFunc" class="day26assignment.TutorialsNinjaTests"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-22T17:10:57 IST" name="RegressionTests" finished-at="2026-05-22T17:10:57 IST" duration-ms="141">
-      <class name="listener_codes.Test_cases">
-        <test-method signature="test1()[pri:0, instance:listener_codes.Test_cases@15c43bd9]" started-at="2026-05-22T17:10:57 IST" name="test1" finished-at="2026-05-22T17:10:57 IST" duration-ms="25" status="PASS">
+    <test started-at="2026-05-23T12:11:03 IST" name="RegressionTests" finished-at="2026-05-23T12:11:24 IST" duration-ms="21023">
+      <class name="day26assignment.TutorialsNinjaTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:03 IST" name="setup" finished-at="2026-05-23T12:11:08 IST" duration-ms="5108" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:listener_codes.Test_cases@15c43bd9]" started-at="2026-05-22T17:10:57 IST" name="test2" finished-at="2026-05-22T17:10:57 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:08 IST" name="login" finished-at="2026-05-23T12:11:15 IST" duration-ms="6742" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Log in']"}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b51026d12340785253f3db5d7f35d20, findElement {value=//input[@value='Log in'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shahr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, goog:processID: 2628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b51026d12340785253f3db5d7f35d20]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at listener_codes.Test_cases.test2(Test_cases.java:13)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='Log in']"}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b51026d12340785253f3db5d7f35d20, findElement {value=//input[@value='Log in'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\shahr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, goog:processID: 2628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b51026d12340785253f3db5d7f35d20
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+at day26assignment.TutorialsNinjaPage.loginUser(TutorialsNinjaPage.java:95)
+at day26assignment.TutorialsNinjaTests.login(TutorialsNinjaTests.java:67)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -49,11 +86,96 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- listener_codes.Test_cases -->
+        </test-method> <!-- login -->
+        <test-method signature="register(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:15 IST" name="register" data-provider="reg" finished-at="2026-05-23T12:11:18 IST" duration-ms="3015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shahid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raza]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shahraza20123@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9091421098]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[shah123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[shah123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="addToCart()[pri:2, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:18 IST" name="addToCart" finished-at="2026-05-23T12:11:18 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method signature="searchProductByName(java.lang.String)[pri:2, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:18 IST" name="searchProductByName" data-provider="ProductNameData" finished-at="2026-05-23T12:11:19 IST" duration-ms="757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iphone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductByName -->
+        <test-method signature="searchProductByName(java.lang.String)[pri:2, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:19 IST" name="searchProductByName" data-provider="ProductNameData" finished-at="2026-05-23T12:11:20 IST" duration-ms="795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductByName -->
+        <test-method signature="searchProductByName(java.lang.String)[pri:2, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:20 IST" name="searchProductByName" data-provider="ProductNameData" finished-at="2026-05-23T12:11:21 IST" duration-ms="709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductByName -->
+        <test-method signature="removeItemFromCart()[pri:3, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:21 IST" name="removeItemFromCart" finished-at="2026-05-23T12:11:22 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromCart -->
+        <test-method signature="checkoutFunction()[pri:4, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:22 IST" name="checkoutFunction" finished-at="2026-05-23T12:11:23 IST" duration-ms="1373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutFunction -->
+        <test-method signature="logoutFunc()[pri:5, instance:day26assignment.TutorialsNinjaTests@67d48005]" started-at="2026-05-23T12:11:23 IST" name="logoutFunc" finished-at="2026-05-23T12:11:24 IST" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFunc -->
+      </class> <!-- day26assignment.TutorialsNinjaTests -->
     </test> <!-- RegressionTests -->
   </suite> <!-- RegressionSuite -->
 </testng-results>
