@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/vaishali1912/wipro-assignment.git'
+                    url: 'https://github.com/shahraza0098/wipro-assignment/tree/main/Cucumber_BBD.git'
             }
         }
  
