@@ -63,7 +63,7 @@ public class CustomerOnboardingTest extends BaseTest {
                 "Customer ID : " + customerId);
 
         // Create Account
-        Thread.sleep(5000);
+   ;
         accountPage.navigateToNewAccount();
 
         accountPage.createAccount(

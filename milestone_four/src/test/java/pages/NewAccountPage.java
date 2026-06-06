@@ -31,15 +31,16 @@ public class NewAccountPage {
 	
 	 
 	 public void navigateToNewAccount() {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-		    // Wait until the link is actually clickable (not blocked)
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		    
 		    WebElement newAccountLink = wait.until(
 		        ExpectedConditions.elementToBeClickable(
 		            By.linkText("New Account")
 		        )
 		    );
-		 driver.findElement(newAccountBtnNav).click();
+		    
+		    // Use the reference you already waited for!
+		    newAccountLink.click();
 	 }
 	 
 	 
