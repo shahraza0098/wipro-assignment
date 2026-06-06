@@ -7,8 +7,7 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver>
             driver = new ThreadLocal<>();
 
-    public static void setDriver(
-            WebDriver dr) {
+    public static void setDriver( WebDriver dr) {
 
         driver.set(dr);
     }
