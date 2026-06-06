@@ -46,7 +46,7 @@ public class CustomerOnboardingTest extends BaseTest {
                 "Bihar",
                 "800001",
                 "9876593210",
-                "shahid1323@gmail.com",
+                "shahffd1323@gmail.com",
                 "test123");
 
         // Capture Customer ID
