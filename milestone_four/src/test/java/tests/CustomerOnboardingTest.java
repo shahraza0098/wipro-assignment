@@ -49,7 +49,7 @@ public class CustomerOnboardingTest extends BaseTest {
                 "Bihar",
                 "800001",
                 "9876593210",
-                "sgdgdffd1323@gmail.com",
+                "sklospfd1323@gmail.com",
                 "test123");
         
         
