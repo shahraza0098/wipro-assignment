@@ -17,14 +17,17 @@ public class CustomerOnboardingTest extends BaseTest {
     @Test
     public void createCustomerAndAccount() {
     	  System.out.println("Test Started");
-        LoginPage loginPage =
-                new LoginPage(driver);
+    	  
+        LoginPage loginPage = new LoginPage(driver);
+        
         System.out.println("Test Started 2");
-        NewCustomerPage customerPage =
-                new NewCustomerPage(driver);
+        
+        NewCustomerPage customerPage =new NewCustomerPage(driver);
+        System.out.println("Test Started 3");
 
-        NewAccountPage accountPage =
-                new NewAccountPage(driver);
+        NewAccountPage accountPage =new NewAccountPage(driver);
+        
+        System.out.println("Test Started 4");
 
         // Login
         loginPage.loginToApplication(
@@ -48,6 +51,9 @@ public class CustomerOnboardingTest extends BaseTest {
                 "9876593210",
                 "sgdgdffd1323@gmail.com",
                 "test123");
+        
+        
+        System.out.println("new customer created");
 
         // Capture Customer ID
         String customerId =
