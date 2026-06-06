@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                dir('phpproject') {
+                dir('milestone_four') {
                     bat 'mvn clean test'
                 }
             }
