@@ -1,6 +1,6 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +15,7 @@ public class CustomerOnboardingTest extends BaseTest {
 
 	
     @Test
-    public void createCustomerAndAccount() throws InterruptedException {
+    public void createCustomerAndAccount()  {
     	  System.out.println("Test Started");
     	  
         LoginPage loginPage = new LoginPage(driver);

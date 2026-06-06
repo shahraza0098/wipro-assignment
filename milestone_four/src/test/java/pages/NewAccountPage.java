@@ -3,6 +3,7 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,7 +32,7 @@ public class NewAccountPage {
 	
 	 
 	 public void navigateToNewAccount() {
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		    
 		    WebElement newAccountLink = wait.until(
 		        ExpectedConditions.elementToBeClickable(
@@ -39,9 +40,11 @@ public class NewAccountPage {
 		        )
 		    );
 		    
-		    // Use the reference you already waited for!
-		    newAccountLink.click();
-	 }
+		    // Scroll into view, then JS click to bypass any overlay
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript("arguments[0].scrollIntoView(true);", newAccountLink);
+		    js.executeScript("arguments[0].click();", newAccountLink);
+		}
 	 
 	 
 	 public void enterCustomerId(String id) {
