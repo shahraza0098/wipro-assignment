@@ -15,7 +15,7 @@ public class CustomerOnboardingTest extends BaseTest {
 
 	
     @Test
-    public void createCustomerAndAccount() {
+    public void createCustomerAndAccount() throws InterruptedException {
     	  System.out.println("Test Started");
     	  
         LoginPage loginPage = new LoginPage(driver);
@@ -63,6 +63,7 @@ public class CustomerOnboardingTest extends BaseTest {
                 "Customer ID : " + customerId);
 
         // Create Account
+        Thread.sleep(5000);
         accountPage.navigateToNewAccount();
 
         accountPage.createAccount(
