@@ -1,9 +1,13 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class NewAccountPage {
 
@@ -27,6 +31,14 @@ public class NewAccountPage {
 	
 	 
 	 public void navigateToNewAccount() {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		    // Wait until the link is actually clickable (not blocked)
+		    WebElement newAccountLink = wait.until(
+		        ExpectedConditions.elementToBeClickable(
+		            By.linkText("New Account")
+		        )
+		    );
 		 driver.findElement(newAccountBtnNav).click();
 	 }
 	 
