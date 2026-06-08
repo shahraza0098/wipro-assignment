@@ -7,6 +7,7 @@ import io.cucumber.java.en.*;
 import pages.LoginPage;
 import pages.NewAccountPage;
 import pages.NewCustomerPage;
+import utils.RanEmail;
 
 public class CustomerOnboardingSteps {
 
@@ -54,7 +55,8 @@ public class CustomerOnboardingSteps {
                 "Bihar",
                 "800001",
                 "9876543210",
-                "abc66jf@gmail.com",
+                RanEmail.generateEmail(),
+            
                 "test123");
     }
 
