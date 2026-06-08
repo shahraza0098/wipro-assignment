@@ -14,7 +14,13 @@
     <classes>
       <class name="day26assignment.TutorialsNinjaTests">
         <methods>
+          <include name="checkoutFunction"/>
+          <include name="register" invocation-numbers="0"/>
+          <include name="logoutFunc"/>
+          <include name="addToCart"/>
+          <include name="searchProductByName" invocation-numbers="0 1 2"/>
           <include name="setup"/>
+          <include name="removeItemFromCart"/>
           <include name="login"/>
         </methods>
       </class> <!-- day26assignment.TutorialsNinjaTests -->

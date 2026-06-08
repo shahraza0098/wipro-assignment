@@ -8,7 +8,7 @@ import base.BaseTest;
 import pages.LoginPage;
 import pages.NewAccountPage;
 import pages.NewCustomerPage;
-
+import utils.RanEmail;
 public class CustomerOnboardingTest extends BaseTest {
 
 	
@@ -49,7 +49,7 @@ public class CustomerOnboardingTest extends BaseTest {
                 "Bihar",
                 "800001",
                 "9876593210",
-                "so05gj323@gmail.com",
+                RanEmail.generateEmail(),
                 "test123");
         
         

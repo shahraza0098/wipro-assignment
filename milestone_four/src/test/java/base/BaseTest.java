@@ -25,6 +25,7 @@ public class BaseTest {
 
 	    System.out.println("Creating Driver");
 	    driver = new ChromeDriver(options);
+//	    driver = new ChromeDriver();
 	    System.out.println("Driver Created");
 	    driver.get("https://demo.guru99.com/V4/");
 	    System.out.println("URL Opened");

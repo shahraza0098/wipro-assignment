@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-06T09:05:17 IST" name="Guru99 Banking Suite" finished-at="2026-06-06T09:05:58 IST" duration-ms="40842">
+  <suite started-at="2026-06-08T07:15:45 IST" name="Guru99 Banking Suite" finished-at="2026-06-08T07:16:18 IST" duration-ms="32392">
     <groups>
     </groups>
-    <test started-at="2026-06-06T09:05:17 IST" name="Customer Onboarding Test" finished-at="2026-06-06T09:05:58 IST" duration-ms="40842">
+    <test started-at="2026-06-08T07:15:45 IST" name="Customer Onboarding Test" finished-at="2026-06-08T07:16:18 IST" duration-ms="32392">
       <class name="tests.CustomerOnboardingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CustomerOnboardingTest@4d9e68d0]" started-at="2026-06-06T09:05:17 IST" name="setup" finished-at="2026-06-06T09:05:42 IST" duration-ms="24915" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CustomerOnboardingTest@130161f7]" started-at="2026-06-08T07:15:45 IST" name="setup" finished-at="2026-06-08T07:16:04 IST" duration-ms="18504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createCustomerAndAccount()[pri:0, instance:tests.CustomerOnboardingTest@4d9e68d0]" started-at="2026-06-06T09:05:42 IST" name="createCustomerAndAccount" finished-at="2026-06-06T09:05:58 IST" duration-ms="15863" status="PASS">
+        <test-method signature="createCustomerAndAccount()[pri:0, instance:tests.CustomerOnboardingTest@130161f7]" started-at="2026-06-08T07:16:04 IST" name="createCustomerAndAccount" finished-at="2026-06-08T07:16:17 IST" duration-ms="13451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCustomerAndAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerOnboardingTest@4d9e68d0]" started-at="2026-06-06T09:05:58 IST" name="tearDown" finished-at="2026-06-06T09:05:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerOnboardingTest@130161f7]" started-at="2026-06-08T07:16:17 IST" name="tearDown" finished-at="2026-06-08T07:16:18 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

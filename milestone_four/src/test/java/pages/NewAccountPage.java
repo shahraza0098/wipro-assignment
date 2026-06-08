@@ -39,6 +39,8 @@ public class NewAccountPage {
 		            By.linkText("New Account")
 		        )
 		    );
+		 
+//		 driver.findElement(newAccountBtnNav).click();
 		    
 		    // Scroll into view, then JS click to bypass any overlay
 		    JavascriptExecutor js = (JavascriptExecutor) driver;

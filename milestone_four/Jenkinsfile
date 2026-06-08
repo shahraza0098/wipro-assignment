@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven-3.9'
-    }
-
     stages {
 
         stage('Checkout') {
@@ -14,22 +10,28 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
+        stage('Build Docker Image') {
             steps {
                 dir('milestone_four') {
-                    bat 'mvn clean test'
+                    bat 'docker build -t milestone-four .'
                 }
+            }
+        }
+
+        stage('Run Tests In Docker') {
+            steps {
+                bat 'docker run --rm milestone-four'
             }
         }
     }
 
     post {
         success {
-            echo 'Build Successful'
+            echo 'Docker Build Successful'
         }
 
         failure {
-            echo 'Build Failed'
+            echo 'Docker Build Failed'
         }
     }
 }
