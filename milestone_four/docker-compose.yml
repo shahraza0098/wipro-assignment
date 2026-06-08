@@ -1,0 +1,14 @@
+services:
+
+  selenium:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium
+    shm_size: 2gb
+
+    ports:
+      - "4444:4444"
+
+  automation:
+    build: .
+    depends_on:
+      - selenium
