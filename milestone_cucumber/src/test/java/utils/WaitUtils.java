@@ -2,6 +2,7 @@ package utils;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,5 +27,14 @@ public class WaitUtils {
     public WebElement waitForElementClickable(By locator) {
         return wait.until(
                 ExpectedConditions.elementToBeClickable(locator));
+    }
+    
+    public static Alert waitForAlert(WebDriver driver) {
+
+        WebDriverWait wait =
+                new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        return wait.until(
+                ExpectedConditions.alertIsPresent());
     }
 }

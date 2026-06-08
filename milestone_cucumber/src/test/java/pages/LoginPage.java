@@ -54,4 +54,24 @@ public class LoginPage {
 	                .getText()
 	                .equals("Welcome To Manager's Page of Guru99 Bank");
 	    }
+	  
+	  public boolean isInvalidLoginAlertPresent() {
+
+		    try {
+
+		        String alertText = driver.switchTo()
+		                                 .alert()
+		                                 .getText();
+
+		        System.out.println("Alert Message: " + alertText);
+
+		        driver.switchTo().alert().accept();
+
+		        return alertText.contains("User or Password is not valid");
+
+		    } catch (Exception e) {
+
+		        return false;
+		    }
+		}
 }

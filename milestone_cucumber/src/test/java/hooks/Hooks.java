@@ -14,16 +14,16 @@ public class Hooks {
     @Before
     public void setup() {
 
-    	 ChromeOptions options = new ChromeOptions();
- 	    options.addArguments("--headless=new");
- 	    options.addArguments("--no-sandbox");
- 	    options.addArguments("--disable-dev-shm-usage");
- 	    options.addArguments("--disable-gpu");
- 	    options.addArguments("--window-size=1920,1080");
+//    	 ChromeOptions options = new ChromeOptions();
+// 	    options.addArguments("--headless=new");
+// 	    options.addArguments("--no-sandbox");
+// 	    options.addArguments("--disable-dev-shm-usage");
+// 	    options.addArguments("--disable-gpu");
+// 	    options.addArguments("--window-size=1920,1080");
 
  	    System.out.println("Creating Driver");
- 	    driver = new ChromeDriver(options);
-// 	    driver = new ChromeDriver();
+// 	    driver = new ChromeDriver(options);
+ 	    driver = new ChromeDriver();
  	    System.out.println("Driver Created");
  	    driver.get("https://demo.guru99.com/V4/");
  	    System.out.println("URL Opened");

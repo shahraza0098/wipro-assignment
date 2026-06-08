@@ -1,12 +1,15 @@
 package stepdefinitions;
 
+import org.openqa.selenium.Alert;
 import org.testng.Assert;
 
 import hooks.Hooks;
 import io.cucumber.java.en.*;
+
 import pages.LoginPage;
 import pages.NewAccountPage;
 import pages.NewCustomerPage;
+import utils.WaitUtils;
 import utils.RanEmail;
 
 public class CustomerOnboardingSteps {
@@ -27,15 +30,46 @@ public class CustomerOnboardingSteps {
 
     }
 
-    @When("User logs in with valid credentials")
-    public void login() {
+    @When("User logs in with valid credentials {string} and {string} and {string}")
+    public void login(String username, String password, String status) {
 
-        loginPage.loginToApplication(
-                "mngr662531",
-                "eguvenA");
+        loginPage.loginToApplication(username, password);
 
-        Assert.assertTrue(
-                loginPage.isLoginSuccessful());
+        if(status.equalsIgnoreCase("valid")) {
+
+          
+
+        	Assert.assertTrue(
+                    loginPage.isLoginSuccessful(), "login validation failed");
+
+            System.out.println("Valid Login Passed");
+
+        } else {
+
+        	
+        	 try {
+        		 
+        	
+
+        		 Alert alert = WaitUtils.waitForAlert(Hooks.driver);
+
+        	        String alertText = alert.getText();
+
+        	        System.out.println("Alert Message: " + alertText);
+
+        	        Assert.assertTrue(
+        	                alertText.contains("User or Password is not valid"),
+        	                "Unexpected alert message");
+
+        	        alert.accept();
+        	        return;
+
+        	    } catch(Exception e) {
+
+        	        Assert.fail("Expected alert not displayed");
+        	    }
+        }
+        
     }
 
     @When("User navigates to New Customer page")
