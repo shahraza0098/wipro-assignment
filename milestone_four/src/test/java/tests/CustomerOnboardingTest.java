@@ -2,6 +2,7 @@ package tests;
 
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -9,6 +10,9 @@ import pages.LoginPage;
 import pages.NewAccountPage;
 import pages.NewCustomerPage;
 import utils.RanEmail;
+import listeners.TestListener;
+
+//@Listeners(TestListener.class)
 public class CustomerOnboardingTest extends BaseTest {
 
 	
