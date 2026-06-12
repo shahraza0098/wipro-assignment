@@ -7,13 +7,22 @@ public class ExtentManager {
 
     private static ExtentReports extent;
 
-    public static ExtentReports getReport() {
+    public static ExtentReports getInstance() {
 
         if(extent == null) {
 
+            String reportPath =
+                    System.getProperty("user.dir")
+                    + "/reports/ExtentReport.html";
+
             ExtentSparkReporter spark =
-                    new ExtentSparkReporter(
-                            "reports/ExtentReport.html");
+                    new ExtentSparkReporter(reportPath);
+
+            spark.config().setReportName(
+                    "Guru99 Bank Automation Report");
+
+            spark.config().setDocumentTitle(
+                    "Automation Execution Report");
 
             extent = new ExtentReports();
 
@@ -21,7 +30,11 @@ public class ExtentManager {
 
             extent.setSystemInfo(
                     "Project",
-                    "Guru99 Banking Automation");
+                    "Guru99 Bank");
+
+            extent.setSystemInfo(
+                    "Tester",
+                    "Shahid");
         }
 
         return extent;

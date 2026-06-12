@@ -1,21 +1,33 @@
 package tests;
 
+import org.openqa.selenium.Alert;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.CustomerPage;
+import pages.LoginPage;
 import utilities.ExcelUtil;
+import utilities.WaitUtil;
 
 public class CustomerTest extends BaseTest  {
-	CustomerPage customerPage;
 	
+    private CustomerPage customerPage;
+    int rowNumber=1;
+	  @BeforeClass
+	    public void initPages() {
+
+	        customerPage = new CustomerPage(driver);
+	        loginToApplication(); 
+	    }
 	@DataProvider(name="customerData")
 	public Object[][] getCustomerData(){
 
 	    ExcelUtil excel =
 	        new ExcelUtil(
-	        "src/test/resources/testdata/CustomerData.xlsx",
+	        "src/test/resources/testdata/CustomerData_Sample.xlsx",
 	        "CustomerData");
 
 	    return excel.getSheetData();
@@ -35,15 +47,19 @@ public class CustomerTest extends BaseTest  {
 	        String email,
 	        String password,
 	        String customerId,
-	        String executionStatus) {
+	        String executionStatus,
+	        String expectedresult
+	        ) {
+		
+		
 
-	    customerPage.clickNewCustomer();
+	    customerPage.navigateToNewCustomer();
 
 	    String uniqueEmail =
 	            System.currentTimeMillis()
 	            + email;
 
-	    customerPage.addCustomer(
+	    customerPage.createNewCustomer(
 	            name,
 	            dob,
 	            address,
@@ -54,28 +70,106 @@ public class CustomerTest extends BaseTest  {
 	            uniqueEmail,
 	            password);
 
-	    String generatedCustomerId =
-	            customerPage.getCustomerId();
+	
+	    
+	    if(expectedresult.equalsIgnoreCase("valid")) {
+	    	
+	        String generatedCustomerId =
+		            customerPage.getCustomerId();
+		    Assert.assertFalse(generatedCustomerId.isEmpty());
+		    
+		    ExcelUtil excel =
+		            new ExcelUtil(
+		            "src/test/resources/testdata/CustomerId.xlsx",
+		            "CustomerID");
+		   
+//
+//		    int rowNumber =
+//		            excel.findRow(tcId);
+		  
 
-	    Assert.assertFalse(
-	            generatedCustomerId.isEmpty());
+		    excel.setCellData(
+		            rowNumber,
+		            0,
+		            generatedCustomerId);
 
-	    ExcelUtil excel =
-	            new ExcelUtil(
-	            "src/test/resources/testdata/Guru99Data.xlsx",
-	            "CustomerData");
+//		    excel.setCellData(
+//		            rowNumber,
+//		            11,
+//		            "CREATED");
+		    
+		    rowNumber++;
 
-	    int rowNumber =
-	            excel.findRow(tcId);
+	    }else {
+	    	 try {
+        		 
+        		 Alert alert = WaitUtil.waitForAlert(driver);
 
-	    excel.setCellData(
-	            rowNumber,
-	            10,
-	            generatedCustomerId);
+        	        String alertText = alert.getText();
 
-	    excel.setCellData(
-	            rowNumber,
-	            11,
-	            "CREATED");
+        	        System.out.println("Alert Message: " + alertText);
+
+        	        Assert.assertTrue( alertText.contains("please fill all fields"),
+        	                "Unexpected alert message");
+
+        	        alert.accept();
+
+        	    } catch(Exception e) {
+
+        	        Assert.fail("Expected alert not displayed");
+        	    }
+	    }
+
+
+	   
 	}
+	
+	
+	
+	//edit Test
+//	
+//	@DataProvider(name="customerId")
+//	public Object[][] getCustomerId(){
+//
+//	    ExcelUtil excel =
+//	        new ExcelUtil(
+//	        "src/test/resources/testdata/CustomerId.xlsx",
+//	        "CustomerID");
+//
+//	    return excel.getSheetData();
+//	}
+//	
+//	@Test(dataProvider="customerId")
+//	public void editCustomerTest(String custId) {
+////
+////	    ExcelUtil excel =
+////	        new ExcelUtil(
+////	        "src/test/resources/testdata/CustomerId.xlsx",
+////	        "CustomerID");
+////
+////	    String custId =
+////	            excel.getCellData(rowNumber-1,0);
+////	    rowNumber--;
+//
+//	    customerPage.editCustomer(
+//	            custId,
+//	            "Updated Address",
+//	            "Updated City",
+//	            "Updated State");
+//
+//	    Assert.assertTrue(
+//	            driver.getPageSource()
+//	                    .contains("Customer details updated Successfully"));
+//
+////	    excel.setCellData(
+////	            1,
+////	            11,
+////	            "UPDATED");
+//	}
+//	
+	
+	
+	
+	
+	
 }

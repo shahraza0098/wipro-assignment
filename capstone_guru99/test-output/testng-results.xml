@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="34" passed="27" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-08T14:15:30 IST" name="Default suite" finished-at="2026-06-08T14:17:49 IST" duration-ms="138547">
+  <suite started-at="2026-06-12T08:05:29 IST" name="Suite" finished-at="2026-06-12T08:08:03 IST" duration-ms="153305">
     <groups>
     </groups>
-    <test started-at="2026-06-08T14:15:30 IST" name="Default test" finished-at="2026-06-08T14:17:49 IST" duration-ms="138547">
+    <test started-at="2026-06-12T08:05:29 IST" name="Login Module" finished-at="2026-06-12T08:05:54 IST" duration-ms="24416">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:15:32 IST" name="setup" finished-at="2026-06-08T14:16:27 IST" duration-ms="54983" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:30 IST" name="setup" finished-at="2026-06-12T08:05:39 IST" duration-ms="9450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:16:27 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-08T14:16:37 IST" duration-ms="10618" status="PASS">
+        <test-method is-config="true" signature="accountSetup()[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:39 IST" name="accountSetup" finished-at="2026-06-12T08:05:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountSetup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:40 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-12T08:05:44 IST" duration-ms="4613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,15 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:16:37 IST" name="tearDown" finished-at="2026-06-08T14:16:37 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:16:37 IST" name="setup" finished-at="2026-06-08T14:17:09 IST" duration-ms="31241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:09 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-08T14:17:10 IST" duration-ms="1249" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:44 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-12T08:05:46 IST" duration-ms="1998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,15 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:10 IST" name="tearDown" finished-at="2026-06-08T14:17:10 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:10 IST" name="setup" finished-at="2026-06-08T14:17:30 IST" duration-ms="19948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:30 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-08T14:17:38 IST" duration-ms="8436" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:46 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-12T08:05:50 IST" duration-ms="3706" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,15 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:38 IST" name="tearDown" finished-at="2026-06-08T14:17:38 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:38 IST" name="setup" finished-at="2026-06-08T14:17:47 IST" duration-ms="9185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:47 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-08T14:17:49 IST" duration-ms="1215" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:50 IST" name="loginTest" data-provider="loginData" finished-at="2026-06-12T08:05:54 IST" duration-ms="3810" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,11 +106,1505 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@498d318c]" started-at="2026-06-08T14:17:49 IST" name="tearDown" finished-at="2026-06-08T14:17:49 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@536f2a7e]" started-at="2026-06-12T08:05:54 IST" name="tearDown" finished-at="2026-06-12T08:05:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Module -->
+    <test started-at="2026-06-12T08:05:54 IST" name="Customer Module" finished-at="2026-06-12T08:06:35 IST" duration-ms="40921">
+      <class name="tests.CustomerTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:05:54 IST" name="setup" finished-at="2026-06-12T08:05:59 IST" duration-ms="4351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initPages()[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:05:59 IST" name="initPages" finished-at="2026-06-12T08:06:01 IST" duration-ms="1850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:06:01 IST" name="addCustomerTest" data-provider="customerData" finished-at="2026-06-12T08:06:04 IST" duration-ms="2965" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shahid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[01-01-1995]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jamshedpur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Jamshedpur]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Jharkhand]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[831001]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[shahid1@gmail.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2826]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[CREATED]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Customer ID']/following-sibling::td"}
+  (Session info: MicrosoftEdge=149.0.4022.62)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1fc8688f01b3180fcff17ea65902bbb7, findElement {value=//td[text()='Customer ID']/following-sibling::td, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Customer ID']/following-sibling::td"}
+  (Session info: MicrosoftEdge=149.0.4022.62)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1fc8688f01b3180fcff17ea65902bbb7, findElement {value=//td[text()='Customer ID']/following-sibling::td, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+at pages.CustomerPage.getCustomerId(CustomerPage.java:131)
+at tests.CustomerTest.addCustomerTest(CustomerTest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:06:04 IST" name="addCustomerTest" data-provider="customerData" finished-at="2026-06-12T08:06:14 IST" duration-ms="10420" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rakesh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[02-02-1996]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ranchi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ranchi]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Jharkhand]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[834001]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9999999999]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[rakesh@gmail.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[17846]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[CREATED]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element found by By.linkText: New Customer to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"New Customer"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.linkText: New Customer to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"New Customer"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at utilities.WaitUtil.waitForElementClickable(WaitUtil.java:29)
+at pages.CustomerPage.navigateToNewCustomer(CustomerPage.java:60)
+at tests.CustomerTest.addCustomerTest(CustomerTest.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:06:14 IST" name="addCustomerTest" data-provider="customerData" finished-at="2026-06-12T08:06:25 IST" duration-ms="10457" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pooja]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[16-11-1996]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Maharashtra]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9912345678]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[pooja@gmail.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element found by By.linkText: New Customer to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"New Customer"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.linkText: New Customer to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"New Customer"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at utilities.WaitUtil.waitForElementClickable(WaitUtil.java:29)
+at pages.CustomerPage.navigateToNewCustomer(CustomerPage.java:60)
+at tests.CustomerTest.addCustomerTest(CustomerTest.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method signature="addCustomerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:06:25 IST" name="addCustomerTest" data-provider="customerData" finished-at="2026-06-12T08:06:35 IST" duration-ms="10407" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC004]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Deepak]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[19-02-1995]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Coimbatore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Coimbatore]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[600001]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9945678123]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element found by By.linkText: New Customer to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"New Customer"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.linkText: New Customer to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"New Customer"}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at utilities.WaitUtil.waitForElementClickable(WaitUtil.java:29)
+at pages.CustomerPage.navigateToNewCustomer(CustomerPage.java:60)
+at tests.CustomerTest.addCustomerTest(CustomerTest.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CustomerTest@69c81773]" started-at="2026-06-12T08:06:35 IST" name="tearDown" finished-at="2026-06-12T08:06:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CustomerTest -->
+    </test> <!-- Customer Module -->
+    <test started-at="2026-06-12T08:06:35 IST" name="Account Module" finished-at="2026-06-12T08:06:54 IST" duration-ms="18949">
+      <class name="tests.AccountTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:35 IST" name="setup" finished-at="2026-06-12T08:06:38 IST" duration-ms="2321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="accountSetup()[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:38 IST" name="accountSetup" finished-at="2026-06-12T08:06:39 IST" duration-ms="1084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountSetup -->
+        <test-method signature="createAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:39 IST" name="createAccountTest" data-provider="accountData" finished-at="2026-06-12T08:06:42 IST" duration-ms="2759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[33840.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Savings]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8000.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method signature="createAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:42 IST" name="createAccountTest" data-provider="accountData" finished-at="2026-06-12T08:06:47 IST" duration-ms="5582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11813.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Savings]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4500.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method signature="createAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:47 IST" name="createAccountTest" data-provider="accountData" finished-at="2026-06-12T08:06:49 IST" duration-ms="2258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[33840.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Current]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12000.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method signature="createAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:49 IST" name="createAccountTest" data-provider="accountData" finished-at="2026-06-12T08:06:52 IST" duration-ms="3008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11813.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Current]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15000.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method signature="createAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:52 IST" name="createAccountTest" data-provider="accountData" finished-at="2026-06-12T08:06:53 IST" duration-ms="973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[33840.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Savings]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method signature="createAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:53 IST" name="createAccountTest" data-provider="accountData" finished-at="2026-06-12T08:06:54 IST" duration-ms="830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Current]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4890.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccountTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AccountTest@4d15107f]" started-at="2026-06-12T08:06:54 IST" name="tearDown" finished-at="2026-06-12T08:06:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AccountTest -->
+    </test> <!-- Account Module -->
+    <test started-at="2026-06-12T08:06:54 IST" name="Deposit Module" finished-at="2026-06-12T08:07:16 IST" duration-ms="22043">
+      <class name="tests.DepositTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:06:54 IST" name="setup" finished-at="2026-06-12T08:06:55 IST" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="accountSetup()[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:06:55 IST" name="accountSetup" finished-at="2026-06-12T08:06:56 IST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountSetup -->
+        <test-method signature="depositTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:06:56 IST" name="depositTest" data-provider="depositData" finished-at="2026-06-12T08:06:59 IST" duration-ms="3121" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testing deposit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Application defect: HTTP ERROR 500 displayed after deposit expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Application defect: HTTP ERROR 500 displayed after deposit expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tests.DepositTest.depositTest(DepositTest.java:87)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositTest -->
+        <test-method signature="depositTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:06:59 IST" name="depositTest" data-provider="depositData" finished-at="2026-06-12T08:07:01 IST" duration-ms="1163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184028a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testing deposit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositTest -->
+        <test-method signature="depositTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:07:01 IST" name="depositTest" data-provider="depositData" finished-at="2026-06-12T08:07:02 IST" duration-ms="1526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfdg66]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testing deposit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositTest -->
+        <test-method signature="depositTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:07:02 IST" name="depositTest" data-provider="depositData" finished-at="2026-06-12T08:07:04 IST" duration-ms="2067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testing deposit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositTest -->
+        <test-method signature="depositTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:07:04 IST" name="depositTest" data-provider="depositData" finished-at="2026-06-12T08:07:16 IST" duration-ms="12176" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-50.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[testing deposit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+at utilities.WaitUtil.waitForAlert(WaitUtil.java:38)
+at pages.DepositPage.acceptDepositeAlert(DepositPage.java:74)
+at tests.DepositTest.depositTest(DepositTest.java:85)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depositTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DepositTest@1a4927d6]" started-at="2026-06-12T08:07:16 IST" name="tearDown" finished-at="2026-06-12T08:07:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DepositTest -->
+    </test> <!-- Deposit Module -->
+    <test started-at="2026-06-12T08:07:16 IST" name="Withdrawal Module" finished-at="2026-06-12T08:07:32 IST" duration-ms="15606">
+      <class name="tests.WithdrawalTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:16 IST" name="setup" finished-at="2026-06-12T08:07:18 IST" duration-ms="2038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="accountSetup()[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:18 IST" name="accountSetup" finished-at="2026-06-12T08:07:21 IST" duration-ms="2103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountSetup -->
+        <test-method signature="withdrawalTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:21 IST" name="withdrawalTest" data-provider="withdrawalData" finished-at="2026-06-12T08:07:23 IST" duration-ms="2044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[withdrawal testing]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawalTest -->
+        <test-method signature="withdrawalTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:23 IST" name="withdrawalTest" data-provider="withdrawalData" finished-at="2026-06-12T08:07:25 IST" duration-ms="1983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[withdrawal testing]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawalTest -->
+        <test-method signature="withdrawalTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:25 IST" name="withdrawalTest" data-provider="withdrawalData" finished-at="2026-06-12T08:07:27 IST" duration-ms="2053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[560000.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[withdrawal testing]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawalTest -->
+        <test-method signature="withdrawalTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:27 IST" name="withdrawalTest" data-provider="withdrawalData" finished-at="2026-06-12T08:07:30 IST" duration-ms="3320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[122545.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[withdrawal testing]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawalTest -->
+        <test-method signature="withdrawalTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:30 IST" name="withdrawalTest" data-provider="withdrawalData" finished-at="2026-06-12T08:07:30 IST" duration-ms="8" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-500.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[withdrawal testing]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Account does not exist}
+  (Session info: MicrosoftEdge=149.0.4022.62): Account does not exist
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1fc8688f01b3180fcff17ea65902bbb7, findElement {value=Withdrawal, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Account does not exist}
+  (Session info: MicrosoftEdge=149.0.4022.62): Account does not exist
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1fc8688f01b3180fcff17ea65902bbb7, findElement {value=Withdrawal, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.62, fedcm:accounts: true, goog:processID: 18212, ms:edgeOptions: {debuggerAddress: localhost:56059}, msedge: {msedgedriverVersion: 149.0.4022.62 (068a180137b0..., userDataDir: C:\Users\shahr\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56059/devtoo..., se:cdpVersion: 149.0.4022.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc8688f01b3180fcff17ea65902bbb7
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:141)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+at pages.WithdrawalPage.clickWithdrawal(WithdrawalPage.java:45)
+at tests.WithdrawalTest.withdrawalTest(WithdrawalTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawalTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.WithdrawalTest@6b09fb41]" started-at="2026-06-12T08:07:32 IST" name="tearDown" finished-at="2026-06-12T08:07:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.WithdrawalTest -->
+    </test> <!-- Withdrawal Module -->
+    <test started-at="2026-06-12T08:07:32 IST" name="Fund Transfer Module" finished-at="2026-06-12T08:07:56 IST" duration-ms="23805">
+      <class name="tests.FundTransferTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:32 IST" name="setup" finished-at="2026-06-12T08:07:33 IST" duration-ms="961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="accountSetup()[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:33 IST" name="accountSetup" finished-at="2026-06-12T08:07:35 IST" duration-ms="1686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountSetup -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:35 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:38 IST" duration-ms="3156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184028.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[800.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:38 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:40 IST" duration-ms="2193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184028.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184029.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1200.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer2]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:40 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:42 IST" duration-ms="2106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184029.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1800.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:42 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:45 IST" duration-ms="2811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[800.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:45 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:48 IST" duration-ms="2482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184029.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[890.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:48 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:50 IST" duration-ms="2176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184028.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[456.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:50 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:52 IST" duration-ms="1930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184029.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184028.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:52 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:53 IST" duration-ms="1454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184029.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184028.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[678.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method signature="fundTransferTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:53 IST" name="fundTransferTest" data-provider="fundTransferData" finished-at="2026-06-12T08:07:56 IST" duration-ms="2794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[184027.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[184028.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[120000.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[fund trasfer7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fundTransferTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FundTransferTest@821330f]" started-at="2026-06-12T08:07:56 IST" name="tearDown" finished-at="2026-06-12T08:07:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FundTransferTest -->
+    </test> <!-- Fund Transfer Module -->
+    <test started-at="2026-06-12T08:07:56 IST" name="Security Module" finished-at="2026-06-12T08:08:03 IST" duration-ms="6770">
+      <class name="tests.LogoutTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogoutTest@1be2019a]" started-at="2026-06-12T08:07:56 IST" name="setup" finished-at="2026-06-12T08:07:58 IST" duration-ms="1945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="logoutSetup()[pri:0, instance:tests.LogoutTest@1be2019a]" started-at="2026-06-12T08:07:58 IST" name="logoutSetup" finished-at="2026-06-12T08:08:00 IST" duration-ms="2068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutSetup -->
+        <test-method signature="logoutTest()[pri:0, instance:tests.LogoutTest@1be2019a]" started-at="2026-06-12T08:08:00 IST" name="logoutTest" finished-at="2026-06-12T08:08:03 IST" duration-ms="2752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogoutTest@1be2019a]" started-at="2026-06-12T08:08:03 IST" name="tearDown" finished-at="2026-06-12T08:08:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LogoutTest -->
+    </test> <!-- Security Module -->
+  </suite> <!-- Suite -->
 </testng-results>

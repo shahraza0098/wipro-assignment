@@ -2,16 +2,30 @@ package tests;
 
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import pages.DepositPage;
 import pages.HomePage;
+import pages.LoginPage;
 import utilities.ExcelUtil;
 import utilities.WaitUtil;
 
 public class LoginTest extends BaseTest {
 
+	
+	LoginPage loginPage;
+	  @BeforeClass
+	    public void accountSetup() {
+
+		loginPage=new LoginPage(driver);
+//		driver.navigate().to("https://demo.guru99.com/V4/");
+	    }
+
+	
+	
     @DataProvider(name = "loginData")
     public Object[][] getLoginData() {
 
@@ -26,8 +40,9 @@ public class LoginTest extends BaseTest {
     public void loginTest(String username,
                           String password,
                           String status) {
+    	driver.navigate().to("https://demo.guru99.com/V4/");
 
-        loginToApplication(username, password);
+    	loginPage.loginToApplication(username, password);
 
         if(status.equalsIgnoreCase("valid")) {
 
@@ -43,6 +58,10 @@ public class LoginTest extends BaseTest {
 
         	
         	 try {
+        		 
+        		 if(password.isEmpty()) {
+        			 loginPage.clickLogin();
+        		 }
         		 
         	
 

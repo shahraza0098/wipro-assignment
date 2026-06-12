@@ -16,11 +16,15 @@ public class ExcelUtil {
 
         try {
 
+            this.filePath = filePath;
+
             FileInputStream fis = new FileInputStream(filePath);
 
-             workbook = new XSSFWorkbook(fis);
+            workbook = new XSSFWorkbook(fis);
 
             sheet = workbook.getSheet(sheetName);
+
+            fis.close();
 
         } catch (Exception e) {
 
@@ -74,6 +78,103 @@ public class ExcelUtil {
             fos.close();
 
         } catch(Exception e) {
+
+            e.printStackTrace();
+        }
+    }
+    
+    
+    public String getCellData(int rowNum, int colNum) {
+    	try {
+    		 Row row = sheet.getRow(rowNum);
+
+    	        if (row == null) {
+    	            return "";
+    	        }
+
+    	        Cell cell = row.getCell(colNum);
+
+    	        if (cell == null) {
+    	            return "";
+    	        }
+    	        
+    	        return cell.toString();
+    		 
+    	}catch(Exception e) {
+
+            e.printStackTrace();
+            return "";
+        }
+    }
+    
+    
+    
+    //find row
+    
+    public int findRow(String tcId) {
+
+        try {
+
+            int lastRow = sheet.getLastRowNum();
+
+            for (int i = 1; i <= lastRow; i++) {
+
+                Row row = sheet.getRow(i);
+
+                if (row == null) {
+                    continue;
+                }
+
+                Cell cell = row.getCell(0); // TC_ID column
+
+                if (cell == null) {
+                    continue;
+                }
+
+                String cellValue = cell.toString().trim();
+
+                if (cellValue.equalsIgnoreCase(tcId.trim())) {
+                    return i;
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+    
+    
+    //clear cell data
+    
+    
+    
+    public void clearCellData(int rowNum, int colNum) {
+
+        try {
+
+            Row row = sheet.getRow(rowNum);
+
+            if (row == null) {
+                return;
+            }
+
+            Cell cell = row.getCell(colNum);
+
+            if (cell == null) {
+                return;
+            }
+
+            cell.setBlank();
+
+            FileOutputStream fos = new FileOutputStream(filePath);
+
+            workbook.write(fos);
+
+            fos.close();
+
+        } catch (Exception e) {
 
             e.printStackTrace();
         }
